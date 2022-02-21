@@ -17,6 +17,8 @@ import menimg from "./Assets/blackm.png";
 import pattern from "./Assets/Pattern.png";
 import CardR from "./CardR";
 import { Headfreq } from "./Styles/CommonP.styles";
+import Footer from "./Footer";
+import Lawyercard from "./Lawyercard";
 function Home() {
   return (
     <>
@@ -56,6 +58,8 @@ function Home() {
         </Headfreq>
       </Conttwo>
       <CardR />
+      <Lawyercard />
+      <Footer />
     </>
   );
 }

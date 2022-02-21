@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import Lawyercard from "./components/Lawyercard";
 import Navbar from "./components/Navbar";
 import GlobalStyles from "./Global.styles";
 import "./index.css";
@@ -16,6 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/service" />
         </Routes>
+        {/* <Footer /> */}
+        {/* <Lawyercard /> */}
         {/* <Footer /> */}
       </BrowserRouter>
     </>

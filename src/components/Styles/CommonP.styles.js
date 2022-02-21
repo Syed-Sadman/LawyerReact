@@ -31,6 +31,7 @@ export const ListArrow = styled.ol`
     line-height: 24px;
     color: var(--text-head);
     padding: 1rem 0.2rem;
+    cursor: pointer;
     &:hover {
       background: #ffffff;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);

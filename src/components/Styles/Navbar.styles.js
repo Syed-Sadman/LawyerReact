@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 // main wrapper
 export const UnList = styled.ul`
   z-index: 10000000;
-  padding: 0px 3rem;
+  padding: 1px 3rem;
   margin-top: 15px;
   position: sticky;
-  top: 0;
+  top: 10;
   max-width: 100%;
   background-color: transparent;
   display: grid;

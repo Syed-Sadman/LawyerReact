@@ -109,15 +109,13 @@ export const FrontImg = styled.div`
   grid-column: 1/5;
   grid-row: 1/2;
   z-index: 10000;
-  /* align-self: center;
-  justify-self: center; */
+  align-self: center;
+  /* justify-self: center; */
   display: grid;
-  place-content: center;
+
   & img {
-    /* max-width: clamp(332px, 95%, 462px);
-    height: clamp(416.78px, 100%, 580px); */
     width: clamp(20rem, 100%, 27.72rem);
-    height: clamp(24.96rem, 490px, 34.8rem);
+    object-fit: cover;
   }
   @media screen and (max-width: 966px) {
     justify-self: start;
