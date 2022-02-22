@@ -2,7 +2,7 @@ import styled from "styled-components";
 import img from "../Assets/Intersect.png";
 
 export const FindLawyerContainer = styled.div`
-  margin-top: 3207px;
+  /* margin-top: 3007px; */
   z-index: -2;
   width: 100%;
   height: 100%;

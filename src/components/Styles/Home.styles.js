@@ -1,23 +1,24 @@
 import styled from "styled-components";
 
 export const Cont = styled.div`
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  height: 297px;
-  top: -80px;
-  padding: 0rem 0rem 0rem 6.5rem;
+  /* height: 170vw; */
+  margin-top: -50px;
+  padding: 0rem 0rem 0rem 6vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media screen and (max-width: 966px) {
-    top: 100px;
+  @media screen and (max-width: 749px) {
+    /* top: 100px; */
     padding: 0rem 0rem 0rem 1rem;
     grid-template-rows: repeat(2, 1fr);
   }
 `;
 
 export const Gridone = styled.div`
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   align-self: center;
+
   & h6 {
     width: clamp(50px, 5vw, 92px);
     height: clamp(20px, 1.7vw, 36px);
@@ -45,7 +46,7 @@ export const Gridone = styled.div`
     color: rgba(32, 23, 0, 1);
     margin-bottom: 18px;
   }
-  @media screen and (max-width: 966px) {
+  @media screen and (max-width: 749px) {
     margin-top: 0rem;
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -94,11 +95,11 @@ export const Button2 = styled(Button)`
 `;
 
 export const Gridtwo = styled.div`
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  @media screen and (max-width: 966px) {
+  @media screen and (max-width: 749px) {
     grid-column: span 2;
   }
 `;
@@ -117,87 +118,72 @@ export const FrontImg = styled.div`
     width: clamp(20rem, 100%, 27.72rem);
     object-fit: cover;
   }
-  @media screen and (max-width: 966px) {
+  @media screen and (max-width: 749px) {
     justify-self: start;
   }
 `;
 export const PatternImg = styled.div`
   grid-column: 3/-1;
   grid-row: 1/2;
-
   & img {
     width: clamp(10rem, 100%, 29.8rem);
     height: clamp(70vh, 100vh, 110vw);
   }
-  @media screen and (max-width: 966px) {
-    grid-column: 3/-1; /* justify-self: start; */
-    align-self: end; /* margin-left: -3rem;
-    margin-right: -7rem; */
-    /* justify-self: start; */
+  @media screen and (max-width: 749px) {
+    grid-column: 3/-1;
+    align-self: end;
   }
 `;
 
-export const Conttwo = styled.div`
-  position: absolute;
+export const MainWrap = styled.div`
+  /* position: absolute; */
+  /* top: 1000px; */
+  display: grid;
   width: 340px;
   height: 328px;
-  top: 1000px;
-  margin-left: 10px;
-
-  & h4 {
-    margin-left: 3rem;
-    display: inline;
-    grid-column: 2/4;
-    grid-row: 1;
-    flex-direction: row;
-  }
-  & h5 {
-    color: rgba(102, 97, 85, 1);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
-    width: 44ch;
-    grid-column: 2/4;
-    grid-row: 2;
-    flex-direction: row;
-  }
+  grid-template-columns: 1fr 1fr;
 `;
 
-export const Gradbtn = styled.h1`
-  text-align: center;
+export const Ellipse = styled.div`
+  /* font-size: clamp(1vw, 84px, 2.5vw); */
+`;
+
+export const Gradbtn = styled.div`
+  /* text-align: center; */
+  height: 7vw;
+  width: 10.5vw;
+  display: grid;
+  place-content: center;
   font-family: Inter;
   font-style: normal;
   font-weight: 800;
   font-size: clamp(1vw, 44px, 2.5vw);
-  text-align: left;
-  border: 0.55px;
-  margin: 1rem 0 0 1rem;
+  /* border: 0.55px; */
+  position: relative;
   & sup {
     font-size: 1rem;
-    /* margin-top: -10px; */
   }
   &::before {
     content: "";
-    bottom: 16rem;
-    left: 0;
     position: absolute;
-    right: 15rem;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-image: linear-gradient(180deg, #ffb900 0%, #049673 100%);
-    border-radius: 10rem;
+    border-radius: 50%;
     transform: rotate(-27.23deg) scale(1.02);
     z-index: -2;
   }
   &::after {
     content: "";
-    bottom: 16rem;
-    left: 0;
     position: absolute;
-    right: 15rem;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: white;
-    border-radius: 10rem;
+    border-radius: 50%;
     transform: rotate(-27.23deg);
     z-index: -1;
   }
@@ -211,7 +197,7 @@ export const Contthree = styled.div`
   top: 1418px;
   bottom: 0;
   background-color: #032019;
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 749px) {
     width: 100%;
   }
 `;
@@ -229,5 +215,43 @@ export const CountC = styled.div`
   justify-content: space-around;
   & h2 {
     font-size: 32px;
+  }
+`;
+
+export const Pare = styled.div`
+  width: 100%;
+  padding: 8vw 0vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  /* position: absolute; */
+`;
+
+export const Conttwo = styled.div`
+  @media screen and (max-width: 749px) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  /* height: 37vw; */
+  margin-left: 10px;
+  display: flex;
+  gap: 2rem;
+  align-self: center;
+  /* justify-self: center; */
+
+  & h4 {
+    /* margin-left: 3rem; */
+    display: inline;
+    grid-column: 2/4;
+    grid-row: 1;
+    flex-direction: row;
+  }
+`;
+
+export const Vid = styled.div`
+  /* padding: 0rem 6.5vw; */
+  display: grid;
+  place-content: center;
+  & img {
+    max-width: 100%;
   }
 `;

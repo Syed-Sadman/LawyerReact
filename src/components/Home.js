@@ -7,22 +7,30 @@ import {
   Contthree,
   Conttwo,
   CountC,
+  Ellipse,
   FrontImg,
   Gradbtn,
   Gridone,
   Gridtwo,
+  MainWrap,
+  Pare,
   PatternImg,
+  Vid,
 } from "./Styles/Home.styles";
 import menimg from "./Assets/blackm.png";
 import pattern from "./Assets/Pattern.png";
+import vid from "./Assets/vid.png";
 import CardR from "./CardR";
 import { Headfreq } from "./Styles/CommonP.styles";
 import Footer from "./Footer";
 import Lawyercard from "./Lawyercard";
+import { MainWrapper } from "./Styles/Card.styles";
+import Carousel from "./Carousel";
 function Home() {
   return (
     <>
       {/* first container */}
+      {/* <Pare> */}
       <Cont>
         <Gridone>
           <h6>Law</h6>
@@ -43,23 +51,34 @@ function Home() {
           </PatternImg>
         </Gridtwo>
       </Cont>
+      {/* </Pare> */}
 
       {/* second container */}
+      <Pare>
+        <Vid>
+          <img src={vid} />
+        </Vid>
+        <Conttwo>
+          <Gradbtn>
+            <Ellipse>
+              82
+              <sup>%</sup>
+            </Ellipse>
+          </Gradbtn>
+          <div>
+            <h4>Our Success rate </h4>
+            <Headfreq>
+              When your Liberty is at stake or your Financial future is in
+              jeopardy, you need an aggressive defense to protect your rights.
+            </Headfreq>
+          </div>
+        </Conttwo>
+      </Pare>
 
-      <Conttwo>
-        <Gradbtn>
-          82
-          <sup>%</sup>
-        </Gradbtn>
-        <h4>Our Success rate </h4>
-        <Headfreq>
-          When your Liberty is at stake or your Financial future is in jeopardy,
-          you need an aggressive defense to protect your rights.
-        </Headfreq>
-      </Conttwo>
-      <CardR />
+      {/* <CardR />
+      <Carousel />
       <Lawyercard />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
